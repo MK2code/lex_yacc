@@ -1,0 +1,12 @@
+
+
+						 PHASE 2: SYNTAX ANALYSIS 
+
+
+
+ Inorder traversal of the Parse Tree: 
+
+#include<stdio.h>, headers, #include<string.h>, program, a, declaration, NULL, statements, x, declaration, 1, statements, y, declaration, 2, statements, z, declaration, 3, statements, x, =, 3, statements, y, =, 10, statements, z, =, 5, statements, x, >, 5, if, k, declaration, 0, CONDITION, k, <, 10, CONDITION, k, ITERATOR, ++, for, y, =, x, +, 3, statements, printf, if-else, else, idx, declaration, 1, statements, i, declaration, 0, CONDITION, i, <, 10, CONDITION, i, ITERATOR, ++, for, printf, statements, scanf, statements, x, >, 5, if, printf, if-else, statements, j, declaration, 0, CONDITION, j, <, z, CONDITION, j, ITERATOR, ++, for, a, =, 1, main, return, RETURN, 1, 
+
+
+

@@ -1,0 +1,31 @@
+
+
+					 PHASE 1: LEXICAL ANALYSIS 			 
+
+
+LEXEME    DATATYPE   SYMBOL TYPE 
+_______________________________________
+
+#include<stdio.h>	N/A	  HEADER
+#include<string.h>	N/A	  HEADER
+main	int	  KEYWORD
+a	int	  IDENTIFIER
+x	int	  IDENTIFIER
+1	int	  CONSTANT
+y	int	  IDENTIFIER
+2	int	  CONSTANT
+z	int	  IDENTIFIER
+3	int	  CONSTANT
+10	int	  CONSTANT
+5	int	  CONSTANT
+if	N/A	  KEYWORD	
+for	N/A	  KEYWORD	
+k	int	  IDENTIFIER
+0	int	  CONSTANT
+printf	N/A	  KEYWORD	
+else	N/A	  KEYWORD	
+idx	int	  IDENTIFIER
+i	int	  IDENTIFIER
+scanf	N/A	  KEYWORD	
+j	int	  IDENTIFIER
+return	N/A	  KEYWORD	
