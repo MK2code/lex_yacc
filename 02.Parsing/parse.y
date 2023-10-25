@@ -92,7 +92,7 @@ return: RETURN value ';'
 
 int main() {
     extern FILE *yyout;
-    yyout=fopen("Output_ques2.txt","w");
+    yyout=fopen("output.txt","w");
     yyparse();
     if(count==0){
     printf("%s","Parsing done successfully\n");
