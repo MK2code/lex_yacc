@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Programming Assignment Readme</title>
-</head>
+
 <body>
 <h1>Programming Assignment - Lex and Yacc</h1>
 <h2>Project Overview</h2>
@@ -91,4 +87,3 @@ $ ./a.out < input.c
   <li><a href="#">http://osr507doc.sco.com/en/tools/Yacc_precedence_assigning.html</a></li>
 </ul>
 </body>
-</html>
