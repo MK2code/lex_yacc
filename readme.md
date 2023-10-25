@@ -8,6 +8,6 @@ Parse Tree        ------(Semantic Analysis)------>      Syntax Tree
 
 
 Lex/Flex - 
-    input  = regular expressions (.c)
-        
+    input  = regular expressions (.c)  
     output = table (lex.yy.c)
+    
