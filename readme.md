@@ -1,4 +1,3 @@
-
 <body>
 <h1>Programming Assignment - Lex and Yacc</h1>
 <h2>Project Overview</h2>
@@ -44,8 +43,8 @@ $ lex lex.l
 $ yacc -d parse.y
 $ gcc -w y.tab.c -o parser
 $ ./parser < input.c
-
 </pre>
+
 <h3>For Part 3: Symbol Tree Generator</h3>
 <pre>
 $ cd 03.Symbol\ Tree\ Generator
@@ -53,8 +52,8 @@ $ lex lex.l
 $ yacc -d parse.y
 $ gcc -w y.tab.c -o symbol_gen
 $ ./symbol_gen < input.c
-
 </pre>
+
 <h3>For Part 4: Syntax Tree Generator</h3>
 <pre>
 $ cd 04.Syntax\ Tree\ Generator
@@ -62,15 +61,14 @@ $ lex lex.l
 $ yacc -d parse.y
 $ gcc -w y.tab.c -o syntax_gen
 $ ./syntax_gen<input.c
-
 </pre>
 
 <h2>Notes</h2>
 <ul>
   <li>All required outputs are displayed on the terminal and copied to respective output files in the respective directories (e.g., Output.txt for question 1).</li>
   <li>The provided sample outputs are based on the "input.c" program.</li>
-  <li>If you wich to change the input, either change the script input file, or edit the "input.c".</li>
-  <li>The code has been tested on Linux environment, bison 2.3 must be installed.</li>
+  <li>If you wish to change the input, either change the script input file or edit the "input.c".</li>
+  <li>The code has been tested on a Linux environment; bison 2.3 must be installed.</li>
 </ul>
 <h2>Project Background</h2>
 <p>This project involves using Lex for token generation and Yacc for parsing C language programs. Lex generates tokens by matching patterns in the input, while Yacc creates a parse tree based on the tokens produced by Lex.</p>
