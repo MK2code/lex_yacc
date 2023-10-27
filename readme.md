@@ -9,7 +9,7 @@
   <li>Develop a Yacc program to generate the symbol table for a C program if it can be successfully parsed.</li>
   <li>Create a Yacc program to generate the syntax tree for any C program.</li>
 </ol>
-<p>A sample input file, "input.c," is provided with the assignment for testing purposes. Your code should work for any valid input program.</p>
+<p>A sample input file, "input.c," is provided with the assignment for testing purposes.</p>
 <h2>Project Structure</h2>
 <p>The project directory structure is as follows:</p>
 <pre>
