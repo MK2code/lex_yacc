@@ -61,6 +61,7 @@ $ gcc -w y.tab.c -o syntax_gen
 $ ./syntax_gen<input.c
 
 </pre>
+
 <h2>Notes</h2>
 <ul>
   <li>All required outputs are displayed on the terminal and copied to respective output files in the respective directories (e.g., Output.txt for question 1).</li>
