@@ -19,44 +19,53 @@ lex_yacc
     -- 03. Symbol Tree Generator
     -- 04. Syntax Tree Generator
 </pre>
+<h2>System Requirements</h2>
+<p>To run this project, you need the following:</p>
+<ul>
+  <li>Linux environment with Flex (for Lex) and Bison (for Yacc) packages installed.</li>
+  <li>GCC compiler</li>
+  <li>Bash shell to run the provided scripts</li>
+</ul>
 <h2>Instructions</h2>
 <p>To run the programs, follow these instructions for each part of the assignment:</p>
-<h3>For Question 1: Token Generator</h3>
+<h3>For Part 1: Token Generator</h3>
 <pre>
 $ cd 01.Token\ Generator
-$ lex question_1.l
-$ gcc lex.yy.c -o a
-$ ./a < input.c
+$ lex lexer.l
+$gcc lex.yy.c -o generator
+$./generator < input.c
 </pre>
-<h3>For Question 2: Parser</h3>
+<h3>For Part 2: Parser</h3>
 <pre>
 $ cd 02.Parser
-$ lex question_2.l
-$ yacc -v -d question_2.y
-$ gcc -ll y.tab.c
-$ ./a.out < input.c
+$ lex lex.l
+$ yacc -d parse.y
+$ gcc -w y.tab.c -o parser
+$ ./parser < input.c
 </pre>
-<h3>For Question 3: Symbol Tree Generator</h3>
+<h3>For Part 3: Symbol Tree Generator</h3>
 <pre>
 $ cd 03.Symbol\ Tree\ Generator
-$ lex question_3.l
-$ yacc -v -d question_3.y
-$ gcc -ll y.tab.c
-$ ./a.out < input.c
+$ lex lex.l
+$ yacc -d parse.y
+$ gcc -w y.tab.c -o symbol_gen
+$ ./symbol_gen < input.c
+
 </pre>
-<h3>For Question 4: Syntax Tree Generator</h3>
+<h3>For Part 4: Syntax Tree Generator</h3>
 <pre>
 $ cd 04.Syntax\ Tree\ Generator
-$ lex question_4.l
-$ yacc -v -d question_4.y
-$ gcc -ll y.tab.c
-$ ./a.out < input.c
+$ lex lex.l
+$ yacc -d parse.y
+$ gcc -w y.tab.c -o syntax_gen
+$ ./syntax_gen<input.c
 </pre>
 <h2>Notes</h2>
 <ul>
-  <li>All required outputs are displayed on the terminal and copied to respective output files in the respective directories (e.g., Output_ques1.txt for question 1).</li>
+  <li>All required outputs are displayed on the terminal and copied to respective output files in the respective directories (e.g., Output.txt for question 1).</li>
   <li>The provided sample outputs are based on the "input.c" program.</li>
-  <li>The code has been tested on macOS, and to compile it in a Linux environment, bison 2.3 must be installed.</li>
+  <li>If you wich to change the input, either change the script input file, or edit the "input.c".</li>
+  <li>The code has been tested on Linux environment, bison 2.3 must be installed.</li>
 </ul>
 <h2>Project Background</h2>
 <p>This project involves using Lex for token generation and Yacc for parsing C language programs. Lex generates tokens by matching patterns in the input, while Yacc creates a parse tree based on the tokens produced by Lex.</p>
@@ -65,20 +74,10 @@ $ ./a.out < input.c
 <ul>
   <li>Programs contain optional headers followed by a single main function with statements. Both single-line and multi-line comments are allowed.</li>
   <li>Statements include declarative, iterative, conditional, assignment, update statements, "printf" and "scanf" functions, and return statements. An empty statement (";") is also allowed.</li>
-  <li>Only integer variables are considered.</li>
   <li>Iterative statements include for loops and while loops with specific syntax requirements.</li>
-  <li>Updation statements involve incrementing and decrementing variables.</li>
-  <li>If-else statements require curly braces even if there's only one statement inside.</li>
   <li>Expressions allow binary arithmetic operators, negation, multiple variables, and constants.</li>
   <li>Conditions include single relational operators, negation, and two operands (identifiers or constants).</li>
   <li>The project uses a bottom-up parser and prints the post-order traversal of the parse tree for question 4.</li>
-</ul>
-<h2>System Requirements</h2>
-<p>To run this project, you need the following:</p>
-<ul>
-  <li>Linux environment with Flex (for Lex) and Bison (for Yacc) packages installed.</li>
-  <li>GCC compiler</li>
-  <li>Bash shell to run the provided scripts</li>
 </ul>
 <h2>References</h2>
 <ul>
