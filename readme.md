@@ -29,6 +29,7 @@ lex_yacc
 <p>To run the programs, follow these instructions for each part of the assignment:</p>
 
 <h3>For Part 1: Token Generator</h3>
+
 <pre>
 $ cd 01.Token\ Generator
 $ lex lexer.l
@@ -37,33 +38,40 @@ $./generator < input.c
 </pre>
 
 <h3>For Part 2: Parser</h3>
+
 <pre>
 $ cd 02.Parser
 $ lex lex.l
 $ yacc -d parse.y
 $ gcc -w y.tab.c -o parser
 $ ./parser < input.c
+
 </pre>
 
 <h3>For Part 3: Symbol Tree Generator</h3>
+
 <pre>
 $ cd 03.Symbol\ Tree\ Generator
 $ lex lex.l
 $ yacc -d parse.y
 $ gcc -w y.tab.c -o symbol_gen
 $ ./symbol_gen < input.c
+
 </pre>
 
 <h3>For Part 4: Syntax Tree Generator</h3>
+
 <pre>
 $ cd 04.Syntax\ Tree\ Generator
 $ lex lex.l
 $ yacc -d parse.y
 $ gcc -w y.tab.c -o syntax_gen
 $ ./syntax_gen<input.c
+
 </pre>
 
 <h2>Notes</h2>
+
 <ul>
   <li>All required outputs are displayed on the terminal and copied to respective output files in the respective directories (e.g., Output.txt for question 1).</li>
   <li>The provided sample outputs are based on the "input.c" program.</li>
